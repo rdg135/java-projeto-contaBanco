@@ -18,6 +18,8 @@ public class ContaTerminal {
         System.out.println("Digite o valor do depósito :");
         double saldo = scanner.nextDouble();
         String saldoFormatado = String.format("%.2f", saldo);
+
+        scanner.close();
         
         System.out.println("Olá "+ nomeCliente +", obrigado por criar uma conta em nosso banco, sua agência é " + agencia +", conta " + numeroConta +" e seu saldo " + saldoFormatado + " já está disponível para saque.");
     }
